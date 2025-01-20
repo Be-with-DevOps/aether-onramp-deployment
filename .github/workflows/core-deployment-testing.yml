@@ -74,7 +74,6 @@ jobs:
         
       - name: Install SD-Core
         run: |
-          find / -name '*eth0.network' 2>/dev/null
-          ls /etc/systemd/network
+          
           make aether-5gc-install  # Running from repo home
           kubectl get pods -n omec
